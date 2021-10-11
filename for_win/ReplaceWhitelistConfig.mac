@@ -1,0 +1,5 @@
+﻿//キーボードマクロのファイル
+S_ReplaceAll('^(?!.*(set name "NMCCRC_Filter"|set url ")).*$(\\r\\n|\\r|\\n)?|^ *set url "\\*"$|^ *set url "(?!\\^)|"$|^ *set url "\\^.*$', '', 60);	// すべて置換
+S_ReDraw(0);	// 再描画
+S_ReplaceAll('^ *set name "NMCCRC_Filter', 'URL', 60);	// すべて置換
+S_ReDraw(0);	// 再描画
